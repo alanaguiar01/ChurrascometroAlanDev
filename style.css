@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    /* background-color: red;   */
+}
+@font-face {
+    font-family: 'churrasco2';
+    src: url(./assets/fonts/REWARD\ PERSONAL\ USE.ttf) format("truetype");
+}
+.container-all{
+    display: flex;
+
+}
+.container-all .home, .textoPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+.container-all .textoPrincipal{
+    background-color: black;
+}
+.container-all .churrasco{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    width: 30%;
+    min-height: 100vh;
+    background-color: #FFDE59;
+}
+.container-all section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.container-all section div{
+    height: 50%;
+    width: 100%;
+}
+.titulo1{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: 'churrasco2';
+    font-size: 39px;
+    text-align: center;
+    width: 100%;
+}
+.quantidade{
+    display: flex; 
+    flex-direction: column;
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh
+}
+.adulto, .crianca, .duracao{
+    margin-bottom: 40px;
+    border-radius: 15px;
+    text-align: center;
+    height: 50px;
+}
+.tipoDeCarne, .bebidasalcolicas, .bebidasSemAlcool{
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    height: 70px;   
+    margin-bottom: 15px;
+}
+
+#p1, #p2, #p3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+}
+.acao{
+    display: flex;
+    justify-content: space-around;
+}
+.calcular{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+.calcular:hover{
+    background-color: rgb(48, 219, 48);
+    color: white;
+}
+.clear{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+.clear:hover{
+    background-color: red;
+    color: white;
+}
+.resultado{
+    display: none;
+    background-color: #ffde59e5;
+    position: absolute;
+    margin-left: 100%;
+    bottom: 0;
+    height: 50vw;
+    width: 100%;
+    z-index: 1000;
+}
+.resposta{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    width: 100%;
+}
+.titulo2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2vh;
+}
+.resposta img {
+    width: 2rem;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+.resposta p {
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;   
+    background-color: black;
+}
+#container img{
+    min-width: 100%;
+    min-height: 100%; 
+    object-fit: cover;
+    
+}
+.textoPrincipal h1{
+    margin-top: 2vh;
+}
+.textoPrincipal h1, h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.textoPrincipal p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+@media screen and (max-width: 830px){
+    body{
+        overflow-y: scroll;
+    }
+    .container-all{ 
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .container-all .churrasco{
+        width: 100%;
+        height: 100%;
+    }
+    .container-all section{
+        width: 100%;
+        height: 100%;
+    }
+    .resultado{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+    }
+    .resposta{
+        width: calc(100% - 100px)
+    }
+}

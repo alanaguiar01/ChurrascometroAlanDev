@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:wght@400;500&family=Poppins:wght@500;700&family=Sofia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <div class="container-all">
+            <aside class="churrasco">
+                <h1 class="titulo1">churrascômetro</h1>
+                <div class="quantidade">
+                    <input type="number" name="adulto" class="adulto" placeholder="Quantos Adultos">
+                    <input type="number" name="crianca" class="crianca" placeholder="Quantas crianças">
+                    <input type="number" name="duracao" class="duracao" placeholder="Quantas horas de churrasco (h)">
+                </div>
+                <p id="p1">Escolha os tipo de carne (escolha 2 opções no minimo)</p>
+                <div class="tipoDeCarne">
+                    <input type="checkbox" name="tiposDeCarne" class="carne">
+                    <label for="carne">Carne</label><br>
+                    <input type="checkbox" name="tiposDeCarne" class="linguica" >
+                    <label for="carne">Linguiça</label><br>
+                    <input type="checkbox" name="tiposDeCarne" class="asaDeFrango" >
+                    <label for="carne">Asa de Frango</label>
+                </div>
+                <p id="p2">Escolha bebidas alcóolicas</p>
+                <div class="bebidasalcolicas">
+                    <input type="checkbox" name="bebidaComAlcool" class="cerveja">
+                    <label for="cerveja">Cerveja</label><br>
+                    <input type="checkbox" name="bebidaComAlcool" class="vodka">
+                    <label for="vodka">Vodka</label><br>
+                    <input type="checkbox" name="bebidaComAlcool" class="whisky">
+                    <label for="whisky">Whisky</label><br>
+                </div>
+                <p id="p3">Escolha bebidas sem álcool</p>
+                <div class="bebidasSemAlcool">
+                    <input type="checkbox" name="bebidaSemAlcool" class="guarana">
+                    <label for="guarana">Guaraná</label><br>
+                    <input type="checkbox" name="bebidaComAlcool" class="suco">
+                    <label for="suco">Suco</label><br>
+                    <input type="checkbox" name="bebidaComAlcool" class="agua">
+                    <label for="agua">Água</label><br>
+                </div>
+                <div class="acao">
+                    <button class="calcular" onclick="calcular()"> Calcular</button>
+                    <button class="clear" onclick="limpar()"> Limpar</button>
+                </div>
+                <div class="resultado"></div>
+            </aside>
+            <section>
+                <div class="textoPrincipal">
+                    <h1>Quer calcular seu churrasco sem dor de cabeça?</h1>
+                    <p>Desfrute de um maravilhoso churrasco, não se preoculpe em calcular quanto você precisa comprar, faremos este calculo a sua disposição.</p>
+                    <h2>Qual a finalidade do churrasco?</h2>
+                    <p>Reuna os amigos ou familiares que pretendem compartilhar ideias e se divertir passando um tempo juntos fortificando este relacionamento, de barriga cheia que se sentimos satisfeitos.</p>
+                    <h2 style="color:red">Aviso importante!</h2>
+                    <p>se beber, não dirija</p>
+                </div>
+                <div class="home">
+                    <div id="container">
+                        <img src="./assets/img/image1.jpg">
+                        <img src="./assets/img/image2.jpg">
+                        <img src="./assets/img/image3.jpg">
+                     </div>
+                </div>     
+            </section>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
