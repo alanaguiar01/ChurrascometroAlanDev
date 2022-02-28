@@ -216,7 +216,7 @@ function bebidasSemAlcool(totalSemAcool){
     let suco = 0
     let agua = 0
 
-    if(iGuarana.cheked && iSuco.cheked && iAgua.cheked){
+    if(iGuarana.checked && iSuco.checked && iAgua.checked){
         guarana = totalSemAcool / 2;
         suco = guarana / 2;
         agua = guarana / 2;
